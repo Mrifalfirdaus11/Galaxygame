@@ -1,0 +1,134 @@
+h2,h3{
+    padding: 10px 20px;
+    color: white;
+    /* font-size: 30px; */
+}
+
+#board{
+    width: 1100px;
+    height: 620px;
+    background: url('asset/merkurius.jpg');
+    background-size: 100% 100%;
+    margin: 20px auto;
+    margin-top: 96px;
+    box-shadow: -5px 5px 7px #371012,
+                5px -5px 7px #1D0F4F;
+    
+}
+
+#area{
+    width: 1100px;
+    height: 620px;
+    position: absolute;
+    overflow: hidden;
+}
+#areaa{
+    width: 1100px;
+    height: 620px;
+    position: absolute;
+    overflow: hidden;
+}
+
+@keyframes lari{
+    0%{
+        background: url('asset/merkurius1.png');
+        background-size: 100% 100%;
+    }
+    20%{
+        background: url('asset/merkurius2.png');
+        background-size: 100% 100%;
+    }
+    50%{
+        background: url('asset/merkurius3.png');
+        background-size: 100% 100%;
+    }
+    75%{
+        background: url('asset/merkurius4.png');
+        background-size: 100% 100%;
+    }
+}
+#dino{
+    width: 95px;
+    height: 100px;
+    background: url('asset/merkurius1.png');
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: 353px;
+    margin-left: 70px;
+    animation: lari 0.3s infinite;
+    transition: 1s;
+}
+
+@keyframes jump{
+    0%{
+        background: url('asset/merkurius5.png');
+        background-size: 100% 100%;
+    }
+    20%{
+        background: url('asset/merkurius6.png');
+        background-size: 100% 100%;
+    }
+    50%{
+        background: url('asset/merkurius7.png');
+        background-size: 100% 100%;
+    }
+    75%{
+        background: url('asset/merkurius8.png');
+        background-size: 100% 100%;
+    }
+}
+
+#dino.freezee{
+    animation: none;
+    background: url('asset/merkurius8.png');
+    background-size: 100% 100%;
+    animation: jump 0.5s ;
+    transition: 1s;
+
+}
+
+@keyframes jump{
+    0%{
+        background: url('asset/jatuhpredator1.png');
+        background-size: 100% 100%;
+    }
+    20%{
+        background: url('asset/jatuhpredator2.png');
+        background-size: 100% 100%;
+    }
+    50%{
+        background: url('asset/jatuhpredator3.png');
+        background-size: 100% 100%;
+    }
+    75%{
+        background: url('asset/jatuhpredator4.png');
+        background-size: 100% 100%;
+    }
+}
+
+#dino.freeze{
+    animation: none;
+    background: url('asset/jatuhpredator5.png');
+    background-size: 100% 100%;
+    animation: jump 0.5s ;
+    transition: 1s;
+
+}
+
+#box{
+    width: 116px;
+    height: 75px;
+    margin-top: 378px;
+   margin-left: 630px;
+    background: url('asset/batu.png');
+    background-size: 100% 100%;
+}
+
+#box2{
+    width: 100px;
+    height: 30px;
+    margin-top: 420px;
+   margin-left: 6310px;
+    background: url('asset/Skeleton.png');
+    background-size: 100% 100%;
+}

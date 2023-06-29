@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  
+    align-items: center;
+    justify-content: center;
+}
+
+.bg{
+    width: 100%;
+    max-width: 130px;
+    height: 50%;   
+    
+    
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+
+.section{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+
+/* Drop down */
+
+.box{
+    position: absolute;
+    top:7%;
+    left:96%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box span img{
+      width: 65px;
+  }
+span{
+    cursor: pointer;
+  }
+ul{
+    position: absolute;
+    margin:10px 0;
+    padding: 0;
+    width: 100%;
+    transform-origin: top;
+    transform:perspective(1000px) rotateX(-90deg);
+    transition: 0.5s;
+  }
+ul.klik{
+    transform:perspective(1000px) rotateX(0deg);			
+  }
+
+ul li{
+    list-style: none;
+  }
+
+ul li a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    }
+
+/* Reusuable CSS */
+
+.container{
+  max-width: 1030px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+}
+
+
+/* swiper button */
+.swiper-navBtn{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: visible;
+}
+.home:hover .swiper-navBtn,
+.review:hover .swiper-navBtn{
+  opacity: 1;
+}
+
+.swiper-navBtn::after,
+.swiper-navBtn::before{
+  font-size: 2rem;
+  display: none;
+}
+
+/* .swiper-button-next{
+  right: 16rem;
+}
+.swiper-button-prev{
+  left: 16rem;
+} */
+
+
+
+/* GAMBAR */
+
+.testi-content{
+  
+  height: 100%;
+  width: 100%;
+  row-gap: 2rem;
+  flex-direction: column;
+}
+.review-img{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+img{
+  height: 130%;
+  object-fit: cover;
+}
+
+.exit img{
+  width: 55px;
+  position: relative;
+  top: 758px;
+  left: 10px;
+}
